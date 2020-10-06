@@ -6,13 +6,14 @@ Then the trigger name is used to actually do something with this Array of names.
 
 When instancing a pQuery you provide a trigger name (default is "go") to execute the final action provided by the exec function:
 
-````javascript
+```javascript
 new pQuery({ trigger: 'go', exec() { console.log(this) })
 ```
 
 ## Simple exemples
 
-```javascrit
+```javascript
+fs = new pQuery({path(){ return this.join('/') }})
 let doc = new pQuery({
 	exec()
 	{
