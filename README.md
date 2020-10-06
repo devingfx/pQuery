@@ -36,4 +36,27 @@ fs = new pQuery({
 fs.folder.where.is.the.file.path // folder/where/is/the/file
 ```
 
+## Complex exemple
+
+TODO: this a goal to acheive
+
+```javascript
+db = new pQuery({???})
+
+db.name // indexedDB.open( 'name' )
+db.name.store = { ... } // .createObjectStore( 'store', { ... } ) //TODO: see for async proxy.set
+db.name.store // .objectStore( 'store' )
+db.name.store = [ ... ] // [...].map( item=> store.add( item ) //TODO: see for async proxy.set
+db.name.store.idxName // .index( 'idxName' )
+db.name.store[id] // .get( id )
+db.name.store[id] = { ... } // .put( id, {} ) //TODO: see for async proxy.set
+db.name.store.map() // .openCursor()
+
+let myDB = db.name
+myDB.store...
+
+let store = db.name.store
+store...
+
+```
 
