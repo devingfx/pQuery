@@ -13,7 +13,6 @@ new pQuery({ trigger: 'go', exec() { console.log(this) })
 ## Simple exemples
 
 ```javascript
-fs = new pQuery({path(){ return this.join('/') }})
 let doc = new pQuery({
 	exec()
 	{
